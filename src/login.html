@@ -1,0 +1,116 @@
+<header id="heaer"  class="animated fadeInDown" >
+
+    <div id="logo-group">
+        <h1 class="reader--title">
+            <a href="#/" class="reader--title-text">
+                <img src="images/branding/logo_reader-_v2.png" alt/>
+            </a>
+            <span class="title-text">Reader</span>
+        </h1>
+    </div>
+
+    <span id="extr-page-header-space"><a href="http://www.comprodls.com" target="_blank" class="btn btn-danger btn-sm">Request an account</a> </span>
+
+</header>
+<div id="main" role="main"  class="animated fadeInDown" >
+    <demo-states></demo-states>
+    <div id="content" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
+                <h1 class="txt-color-red login-header-big">Reader</h1>
+
+                <div class="hero">
+                    <div class="login-desc-box-l">
+                        <div class="login-app-icons">
+                            <a href="http://www.comprotechnologies.com" target="_blank" class="btn btn-danger btn-sm">About Reader</a>
+                            <a href="http://www.comprodls.com" target="_blank" class="btn btn-danger btn-sm">More about Reader</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="images/branding/iPad_graphic.png" class="display-image img-responsive" alt/>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                <div data-ng-show="invalideCredential" class="alert alert-danger" role="alert">
+                    {{errorMessage}}
+                </div>
+                <div class="well no-padding">
+                    <form id="login-form" class="smart-form client-form"  data-smart-validate-form data-ng-submit="login(user)">
+                        <header>
+                            Sign In
+                        </header>
+                        <fieldset>
+                            <section>
+                                <label class="label">School / Organisation</label>
+                                <label class="input"> <i class="icon-append fa fa-university"></i>
+                                    <input type="text" name="orgid"
+                                           data-required
+                                           data-smart-validate-input
+                                           data-message-required="Please enter organisation Id"
+                                           data-ng-model="user.orgid">
+                                    <b class="tooltip tooltip-top-right"><i class="fa fa-university txt-color-teal"></i>
+                                        Please enter organisation Id</b></label>
+                            </section>
+                            <section>
+                                <label class="label">Username</label>
+                                <label class="input"> <i class="icon-append fa fa-user"></i>
+                                    <input type="text" name="username"
+                                           data-required
+                                           data-smart-validate-input
+                                           data-message-required="Please enter username"
+                                           data-ng-model="user.username">
+                                    <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i>
+                                        Please enter username</b></label>
+                            </section>
+                            <section>
+                                <label class="label">Password</label>
+                                <label class="input"> <i class="icon-append fa fa-lock"></i>
+                                    <input type="password" name="password"
+                                           data-smart-validate-input
+                                           data-required
+                                           data-minlength="3"
+                                           data-maxnlength="20"
+                                           data-message="Please enter your password"
+                                           data-ng-model="user.password">
+                                    <b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Enter
+                                        your password</b> </label>
+
+                                <div class="note">
+                                    <a href="javascript:void(0)">Forgot password?</a>
+                                </div>
+                            </section>
+                            <section>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="remember" checked data-ng-model="user.staySignIn">
+                                    <i></i>Stay signed in</label>
+                            </section>
+                        </fieldset>
+                        <footer>
+                            <button id='submitButton' type="submit" class="btn btn-primary">
+                                Sign in
+                            </button>
+                        </footer>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- PAGE FOOTER -->
+<div class="page-footer login-page-footer">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <span class="txt-color-white">Demos &#169; 2015-2016</span>
+        </div>
+
+        <div class="col-sm-6 text-right hidden-xs">
+            <div version-info class="txt-color-white inline-block">
+                <i class="txt-color-blueLight hidden-mobile">
+                    <span class="lastUpdated"> Last Updated: <strong>{{lastUpdated | date:'medium'}}</strong></span>
+                </i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE FOOTER -->
