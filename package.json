@@ -9,7 +9,10 @@
   "dependencies": {
     "gulp-protractor-qa": "git+https://github.com/sakshinagpal/gulp-protractor-qa.git"
   },
-  "devDependencies": {},
+  "devDependencies": {
+      "gulp-protractor": "^2.2.0",
+	    "gulp": "^3.9.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sakshinagpal/ReaderApp.git"
