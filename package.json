@@ -10,8 +10,11 @@
     "gulp-protractor-qa": "git+https://github.com/sakshinagpal/gulp-protractor-qa.git"
   },
   "devDependencies": {
-      "gulp-protractor": "^2.2.0",
-	    "gulp": "^3.9.0"
+	"gulp-protractor": "^2.2.0",
+	"gulp": "^3.9.0"
+  },
+    "scripts": {
+    "test": "gulp"
   },
   "repository": {
     "type": "git",
