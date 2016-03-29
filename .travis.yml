@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "5.6.0"
+
+branches:
+  only:
+    - master
+	
+before_script:
+  - npm install
+
+before_script
+  - node ./test/runner.js
+  
