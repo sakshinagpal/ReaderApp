@@ -11,7 +11,8 @@
   },
   "devDependencies": {
 	"gulp-protractor": "^2.2.0",
-	"gulp": "^3.9.0"
+	"gulp": "^3.9.0",
+	"selenium-webdriver": "^2.53.1"
   },
     "scripts": {
     "test": "gulp"
