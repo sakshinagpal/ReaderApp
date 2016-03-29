@@ -21,8 +21,8 @@ gulp.task('default', function() {
         .on('error', function(e) { console.log(e) })*/
     protractorQA.init({
         runOnce: true, // optional: when you don't want to watch files changes
-		testSrc: './specs/*spec.js',
-		viewSrc: ['../src/login.html']
+		testSrc: './test/specs/login.spec.js',
+		viewSrc: ['./src/login.html']
     });
 });
 
