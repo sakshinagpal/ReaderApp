@@ -22,7 +22,7 @@ gulp.task('default', function() {
     protractorQA.init({
         runOnce: true, // optional: when you don't want to watch files changes
 		testSrc: './test/specs/login.spec.js',
-		viewSrc: ['./src/login.html']
+		viewSrc: [/*'./src/GoogleHome.html',*/'./src/GoogleSearch.html']
     });
 });
 

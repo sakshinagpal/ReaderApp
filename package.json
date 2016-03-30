@@ -15,7 +15,7 @@
 	"selenium-webdriver": "^2.53.1"
   },
     "scripts": {
-    "test": "gulp"
+    "test": "node test/specs/login.spec.js"
   },
   "repository": {
     "type": "git",

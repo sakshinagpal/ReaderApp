@@ -5,6 +5,6 @@ var protractorQA = require('gulp-protractor-qa');
 
 protractorQA.init({
     runOnce: true, // optional: when you don't want to watch files changes
-    testSrc: './specs/*spec.js',
-    viewSrc: ['../src/login.html']
+    testSrc: './test/specs/login.spec.js',
+    viewSrc: ['./src/login.html']
 })
